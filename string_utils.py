@@ -14,8 +14,8 @@ def count_vowels(s):
 
 def is_palindrome(s):
     """Check if a string is a palindrome (ignoring case and spaces)."""
-    # Remove spaces and convert to lowercase
-    cleaned = s.replace(" ", "").lower()
+    # Remove spaces but forget to convert to lowercase (BUG!)
+    cleaned = s.replace(" ", "")
     return cleaned == cleaned[::-1]
 
 
